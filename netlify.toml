@@ -1,0 +1,10 @@
+[build]
+  # Runs the production Next.js build
+  command = "npm run build"
+  
+  # Next.js places static export files in the 'out' directory
+  publish = "out"
+
+[build.environment]
+  # Pins the Node.js runtime environment to version 22
+  NODE_VERSION = "22"

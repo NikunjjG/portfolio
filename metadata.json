@@ -1,0 +1,6 @@
+{
+  "name": "Portfolio | Nikunj",
+  "description": "An interactive neo-brutalist developer portfolio with a dynamic JSON form builder, interactive command console, and real-time performance optimization playground.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@100..900&family=JetBrains+Mono:wght@100..900&family=Work+Sans:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary-container: #ffe600;
+  --color-secondary: #006c52;
+  --color-secondary-container: #8ff6d0;
+  --color-tertiary-container: #ffdaf4;
+  --color-on-primary-container: #726600;
+  --color-on-secondary-container: #007257;
+  --color-error: #ba1a1a;
+  --color-background: #f9f9f9;
+  --color-on-background: #1a1c1c;
+
+  --font-display: "Anybody", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-sans: "Work Sans", sans-serif;
+}
+
+/* Custom Neo-Brutalist physical shadow styling definitions */
+.neo-shadow {
+  box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
+  transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.neo-shadow:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+}
+
+.neo-shadow:active {
+  transform: translate(4px, 4px);
+  box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+}
+
+.neo-flat-shadow {
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+}
+
+.border-dashed-neo {
+  border: 3px dashed #1a1c1c;
+}
+
+.border-solid-neo {
+  border: 3px solid #1a1c1c;
+}
+
+/* Keyframes and Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(3deg); }
+}
+
+@keyframes wobble {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+.float-animation {
+  animation: float 4s ease-in-out infinite;
+}
+
+.wobble-animation {
+  animation: wobble 3s ease-in-out infinite;
+}
+
+/* Custom horizontal scrollbar styled with neo brut accent */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #f3f3f4;
+  border-left: 3px solid #1a1c1c;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #1a1c1c;
+  border: 2px solid #f3f3f4;
+}
